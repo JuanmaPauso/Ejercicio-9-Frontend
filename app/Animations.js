@@ -117,7 +117,7 @@ const animation_MenuToMain = (getTo) => {
 
 };
 
-const animation_MenuToMenu = (getTo) => {
+const animation_MainToMenu = (getTo) => {
 
     const from = document.querySelector( '#main_page');
     const to = document.querySelector('#swiper_page');
@@ -150,6 +150,7 @@ const animation_MenuToMenu = (getTo) => {
             visibility: 'hidden', 
         });
 // Aqui poner codigo para reiniciar las vidas y el score
+        game.ended = true;
         document.querySelector('.game').innerHTML = '';
     });
 

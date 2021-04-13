@@ -168,7 +168,9 @@ const navigationTo = (getTo, animationType) => {
             break;
 
         case 'game_out':
-            animation_MenuToMenu(getTo);
+            animation_ConfirmOut(getTo);
+            animation_PopupContinue(getTo);
+            animation_MainToMenu(getTo);
             break;
 
 
