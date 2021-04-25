@@ -688,4 +688,12 @@ a {
 #main_page .game {
   flex-basis: 100%;
   width: 100%;
+}
+
+.draggable {
+  touch-action: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }/*# sourceMappingURL=main.css.map */

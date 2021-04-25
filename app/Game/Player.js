@@ -66,15 +66,24 @@ class Player extends Character {
         let interactable = interact(this.myImageContainer);
 
         interactable.draggable({
+            inertia: true,
+            modifiers: [
+                interact.modifiers.restrictRect({
+                    restriction: 'parent',
+                    endOnly: true
+                }),
+            ],
             listeners: {
                 start: ev => {
-                    console.log(ev)
+                    
                 }, 
                 move: ev => {
-                    console.log(ev)
+                    this.x += ev.delta.x;
+                    //this.y += ev.delta.y;
+                    this.myImageContainer.style.transform = `translate(${this.x}px, ${this.y}px)`
                 }, 
                 end: ev => {
-                    console.log(ev)
+                    
                 }
             }
         })
