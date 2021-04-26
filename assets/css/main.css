@@ -576,6 +576,7 @@ a {
   font-family: "Zen Dots";
   color: #99372A;
   font-size: 2.5rem;
+  text-transform: uppercase;
 }
 #app #main_page header h2,
 #app #settings_page header h2,
@@ -583,6 +584,7 @@ a {
   font-family: "Zen Dots";
   color: #99372A;
   text-align: center;
+  text-transform: uppercase;
 }
 #app #main_page .hscore,
 #app #settings_page .hscore,
@@ -608,20 +610,34 @@ a {
 #app #leaderboard_page footer {
   width: 100%;
 }
+#app #leaderboard_page .main {
+  color: #51A45D;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
 #app .lboard_table {
   display: flex;
-  align-items: center;
   flex-direction: column;
 }
 #app .lboard_table .lboard_item {
   display: flex;
-  gap: 20%;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+#app .lboard_table .lboard_item_name {
+  font-weight: 500;
+  color: #99372A;
+}
+#app .lboard_table .lboard_item_p {
+  color: #51A45D;
 }
 #app #main_page .ui {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #51A45D;
 }
 #app #main_page .game {
   flex-basis: 100%;
@@ -662,6 +678,7 @@ a {
   color: #99372A;
   font-size: 2.5rem;
   margin-top: 10%;
+  text-transform: uppercase;
 }
 #app #splash_page {
   background-color: #99372A;
@@ -671,6 +688,19 @@ a {
   font-family: "Zen Dots";
   color: white;
   font-size: 2.5rem;
+}
+#app #settings_page .setting, #app #modal_pause_window .setting {
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+}
+#app #settings_page .setting_label, #app #modal_pause_window .setting_label {
+  flex: 1 1 100%;
+  color: #99372A;
+}
+#app #settings_page .setting_icon, #app #modal_pause_window .setting_icon {
+  color: #51A45D;
+  margin-right: 5%;
 }
 #app .footer {
   text-align: center;
@@ -714,9 +744,6 @@ a {
 .spinner_window .holder {
   padding: 1.5rem;
   grid-area: 2/2/span 1/span 1;
-  background-color: #99372A;
-  color: white;
-  text-align: center;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   z-index: 2;
@@ -739,10 +766,15 @@ a {
   margin-bottom: 1rem;
 }
 
+#modal_confirm .holder {
+  background-color: #99372A;
+  color: white;
+}
 #modal_confirm .message {
   font-size: 1.2rem;
   font-weight: bold;
   margin: 0 0 2rem;
+  text-align: center;
 }
 #modal_confirm .cta {
   display: flex;
@@ -805,10 +837,41 @@ a {
   color: #EC7B6C;
 }
 
+.toggle {
+  height: 1rem;
+  width: 2rem;
+  border: 2px solid #99372A;
+  color: #99372A;
+  border-radius: 10px;
+  transition: all 200ms ease;
+}
+.toggle.on {
+  border: 2px solid #51A45D;
+  color: #51A45D;
+  transition: all 200ms ease;
+}
+.toggle.on span {
+  transform: translate(3px, 5px) scale(-0.75);
+  transition: all 200ms ease;
+}
+.toggle span {
+  line-height: 0;
+  transform: translate(-13px, 5px) scale(-0.75);
+  display: block;
+  transition: all 200ms ease;
+}
+
 /*
 
 btn_tertiary {
 
+}
+*/
+/*
+* {
+    &:not(a) {
+        border: 1px solid cyan;
+    }
 }
 */
 .draggable {
