@@ -573,7 +573,16 @@ a {
 #app #settings_page header h1,
 #app #leaderboard_page header h1 {
   text-align: center;
-  margin-left: 50%;
+  font-family: "Zen Dots";
+  color: #99372A;
+  font-size: 2.5rem;
+}
+#app #main_page header h2,
+#app #settings_page header h2,
+#app #leaderboard_page header h2 {
+  font-family: "Zen Dots";
+  color: #99372A;
+  text-align: center;
 }
 #app #main_page .hscore,
 #app #settings_page .hscore,
@@ -599,6 +608,15 @@ a {
 #app #leaderboard_page footer {
   width: 100%;
 }
+#app .lboard_table {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#app .lboard_table .lboard_item {
+  display: flex;
+  gap: 20%;
+}
 #app #main_page .ui {
   width: 100%;
   display: flex;
@@ -615,6 +633,7 @@ a {
   display: grid;
   grid-template-columns: minmax(1rem, 1fr) minmax(auto, 400px) minmax(1rem, 1fr);
   grid-template-rows: 1fr auto 1fr;
+  background-color: rgba(255, 255, 255, 0.8);
   visibility: hidden;
   opacity: 0;
 }
@@ -638,16 +657,29 @@ a {
   flex-direction: column;
   justify-content: space-between;
 }
+#app #menu_page h1 {
+  font-family: "Zen Dots";
+  color: #99372A;
+  font-size: 2.5rem;
+  margin-top: 10%;
+}
 #app #splash_page {
   background-color: #99372A;
   justify-content: center;
 }
+#app #splash_page h1 {
+  font-family: "Zen Dots";
+  color: white;
+  font-size: 2.5rem;
+}
 #app .footer {
   text-align: center;
   margin-top: 2em;
-  justify-content: flex-end;
-  flex-wrap: wrap;
   padding: 10px;
+}
+#app .footer .btn_play {
+  margin-bottom: 10%;
+  font-size: 2.5rem;
 }
 #app .footer .foot_navigation {
   margin-top: 1em;
@@ -666,6 +698,11 @@ a {
   text-align: center;
   display: flex;
   flex-direction: column;
+  color: #99372A;
+  text-decoration: none;
+}
+#app .footer .foot_navigation ul li a:hover {
+  color: #EC7B6C;
 }
 
 .modal_window .overlay,
@@ -677,7 +714,9 @@ a {
 .spinner_window .holder {
   padding: 1.5rem;
   grid-area: 2/2/span 1/span 1;
-  background-color: #fff;
+  background-color: #99372A;
+  color: white;
+  text-align: center;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   z-index: 2;
@@ -728,6 +767,8 @@ a {
 .btn {
   width: 250px;
   padding: 5px;
+  padding-left: 5%;
+  padding-right: 5%;
   border-radius: 5px;
   margin: auto;
   font-size: 1.1rem;
@@ -758,8 +799,10 @@ a {
 }
 
 .pause_btn {
-  width: 200px;
-  height: 200px;
+  color: #99372A;
+}
+.pause_btn:hover {
+  color: #EC7B6C;
 }
 
 /*

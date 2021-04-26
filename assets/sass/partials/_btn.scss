@@ -1,6 +1,9 @@
+
 .btn {
     width: 250px;
     padding: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
     border-radius: 5px;
     margin: auto;
     font-size: $base * 2.2;
@@ -14,12 +17,12 @@
 .btn_primary {
 
     background-color: map-get($themes, color_1);
-    color: white;
+    color: map-get($themes, color_4);
     
 
     &:hover {
         background-color: map-get($themes, color_3);
-        color: white;
+        color: map-get($themes, color_4);
     }
     
 
@@ -39,8 +42,11 @@
 }
 
 .pause_btn {
-    width: 200px;
-    height: 200px;
+    color: map-get($themes, color_2);
+
+    &:hover {
+        color: map-get($themes, color_3);
+    }
 }
 
 /*
