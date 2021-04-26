@@ -22,13 +22,13 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: "Nunito", "Helvetica", Arial, sans_serif;
+  font-family: "Roboto", "Helvetica", Arial, sans_serif;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5rem;
   color: #333;
   text-align: left;
-  background-color: black;
+  background-color: #99372A;
 }
 
 [tabindex="-1"]:focus {
@@ -123,13 +123,13 @@ sup {
 }
 
 a {
-  color: #345c8d;
+  color: gray;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 a:hover {
-  color: #264468;
+  color: #676767;
   text-decoration: none;
 }
 
@@ -511,7 +511,7 @@ template {
 html,
 body {
   font-size: 1rem;
-  font-family: "Nunito", "Helvetica", Arial, sans_serif;
+  font-family: "Roboto", "Helvetica", Arial, sans_serif;
   line-height: 1.5rem;
   color: #333;
 }
@@ -636,7 +636,11 @@ a {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+#app #splash_page {
+  background-color: #99372A;
+  justify-content: center;
 }
 #app .footer {
   text-align: center;
@@ -723,22 +727,47 @@ a {
 
 .btn {
   width: 250px;
-  background-color: #32F5D2;
-  border: 2px solid #F162C1;
   padding: 5px;
   border-radius: 5px;
   margin: auto;
   font-size: 1.1rem;
+  font-weight: 600;
   text-decoration: none;
-  color: #345c8d;
+  color: white;
   text-align: center;
 }
-.btn:hover {
-  background-color: #30ECF8;
-  border: 2px solid #32F5D2;
-  color: #264468;
+
+.btn_primary {
+  background-color: #E06452;
+  color: white;
+}
+.btn_primary:hover {
+  background-color: #EC7B6C;
+  color: white;
 }
 
+.btn_secondary {
+  color: #99372A;
+  background-color: white;
+  border: 2px solid #99372A;
+}
+.btn_secondary:hover {
+  background-color: white;
+  border: 2px solid #EC7B6C;
+  color: #EC7B6C;
+}
+
+.pause_btn {
+  width: 200px;
+  height: 200px;
+}
+
+/*
+
+btn_tertiary {
+
+}
+*/
 .draggable {
   touch-action: none;
   -webkit-user-select: none;

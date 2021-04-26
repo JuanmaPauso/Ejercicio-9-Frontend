@@ -108,7 +108,12 @@
         text-align: center;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
+    }
+
+    #splash_page {
+        background-color: map-get($themes, color_2);
+        justify-content: center;
     }
 
     .footer {
