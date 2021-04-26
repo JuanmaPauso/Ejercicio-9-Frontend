@@ -1,0 +1,18 @@
+.btn {
+    width: 250px;
+    background-color: map-get($themes, color_2);
+    border: 2px solid map-get($themes, color_1);
+    padding: 5px;
+    border-radius: 5px;
+    margin: auto;
+    font-size: $base * 2.2;
+    text-decoration: $link_decoration;
+    color: $link_color;
+    text-align: center;
+
+    &:hover {
+        background-color: map-get($themes, color_3);
+        border: 2px solid map-get($themes, color_2);
+        color: $link_hover_color;
+    }
+}
