@@ -535,6 +535,148 @@ a {
   color: #008cff;
 }
 
+svg {
+  width: 300px;
+  height: 300px;
+}
+svg .logo .Aguja {
+  stroke: white;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 5;
+  stroke-dasharray: 40;
+  stroke-dashoffset: 40;
+  transform: translate(-50px, 50px);
+  transition-property: transform stroke-dashoffset;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+svg .logo .base-aguja {
+  fill: white;
+  transition-property: fill;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+svg .logo .palo {
+  fill: white;
+  transform: translate(-7px, 7px);
+  transition-property: transform fill;
+  transition-duration: 200ms, 300ms;
+  transition-timing-function: ease;
+}
+svg .logo .contenedor {
+  fill: white;
+  transition-property: fill;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+svg .logo .base-apretar {
+  fill: white;
+  transform: translate(-7px, 7px);
+  transition-property: transform fill;
+  transition-duration: 200ms, 300ms;
+  transition-timing-function: ease;
+}
+svg .logo .base-contenedor {
+  fill: white;
+  transition-property: fill;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+svg .logo .liquido {
+  fill: white;
+  transition-property: fill;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+svg .logo .ralla-1 {
+  fill: white;
+  transition-property: fill;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+svg .logo .ralla-2 {
+  fill: white;
+  transition-property: fill;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+svg .logo .ralla-3 {
+  fill: white;
+  transition-property: fill;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+svg.active .logo .Aguja {
+  stroke: #EC7B6C;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 5;
+  stroke-dasharray: 40;
+  stroke-dashoffset: 0;
+  transform: translate(0px, 0px);
+  transition-property: transform stroke-dashoffset;
+  transition-duration: 100ms, 300ms;
+  transition-timing-function: ease, ease;
+  transition-delay: 300ms, 0;
+}
+svg.active .logo .base-aguja {
+  fill: #E06452;
+  transition-property: fill;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+svg.active .logo .palo {
+  fill: #EC7B6C;
+  transform: translate(0px, 0px);
+  transition-property: transform fill;
+  transition-duration: 200ms, 300ms;
+  transition-timing-function: ease;
+}
+svg.active .logo .contenedor {
+  fill: #EC7B6C;
+  transition-property: fill;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+svg.active .logo .base-apretar {
+  fill: #E06452;
+  transform: translate(0px, 0px);
+  transition-property: transform fill;
+  transition-duration: 200ms, 300ms;
+  transition-timing-function: ease;
+}
+svg.active .logo .base-contenedor {
+  fill: #E06452;
+  transition-property: fill;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+svg.active .logo .liquido {
+  fill: #85F19F;
+  transition-property: fill;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+svg.active .logo .ralla-1 {
+  fill: #99372A;
+  transition-property: fill;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+svg.active .logo .ralla-2 {
+  fill: #99372A;
+  transition-property: fill;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+svg.active .logo .ralla-3 {
+  fill: #99372A;
+  transition-property: fill;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+
 #app {
   height: 100vh;
   width: 100vw;

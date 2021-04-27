@@ -1,0 +1,150 @@
+svg {
+    width: 300px;
+    height: 300px;
+
+    .logo {
+        .Aguja {
+            stroke: white;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 5;
+            stroke-dasharray: 40;
+            stroke-dashoffset: 40;
+            transform:  translate(-50px, 50px);
+            transition-property: transform stroke-dashoffset;
+            transition-duration: 300ms;
+            transition-timing-function: ease;
+        }
+        .base-aguja {
+            fill: white;
+            transition-property: fill;
+            transition-duration: 300ms;
+            transition-timing-function: ease;
+        }
+        .palo {
+            fill: white;
+            transform:  translate(-7px, 7px);
+            transition-property: transform fill;
+            transition-duration: 200ms, 300ms;
+            transition-timing-function: ease;
+        }
+        .contenedor {
+            fill: white;
+            transition-property: fill;
+            transition-duration: 300ms;
+            transition-timing-function: ease;
+        }
+        .base-apretar {
+            fill: white;
+            transform:  translate(-7px, 7px);
+            transition-property: transform fill;
+            transition-duration: 200ms, 300ms;
+            transition-timing-function: ease;
+        }
+        .base-contenedor {
+            fill: white;
+            transition-property: fill;
+            transition-duration: 300ms;
+            transition-timing-function: ease;
+        }
+        .liquido {
+            fill: white;
+            transition-property: fill;
+            transition-duration: 300ms;
+            transition-timing-function: ease;
+        }
+        .ralla-1 {
+            fill: white;
+            transition-property: fill;
+            transition-duration: 300ms;
+            transition-timing-function: ease;
+        }
+        .ralla-2 {
+            fill: white;
+            transition-property: fill;
+            transition-duration: 300ms;
+            transition-timing-function: ease;
+        }
+        .ralla-3 {
+            fill: white; 
+            transition-property: fill;
+            transition-duration: 300ms;
+            transition-timing-function: ease;
+        }
+    }
+    &.active {
+        .logo {
+            .Aguja {
+                stroke: #EC7B6C;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 5;
+                stroke-dasharray: 40;
+                stroke-dashoffset: 0;
+                transform:  translate(0px, 0px);
+                transition-property: transform stroke-dashoffset;
+                transition-duration: 100ms, 300ms;
+                transition-timing-function: ease, ease;
+                transition-delay: 300ms, 0;
+            }
+            .base-aguja {
+                fill: #E06452;
+                transition-property: fill;
+                transition-duration: 300ms;
+                transition-timing-function: ease;
+            }
+            .palo {
+                fill: #EC7B6C;
+                transform:  translate(0px, 0px);
+                transition-property: transform fill;
+                transition-duration: 200ms, 300ms;
+                transition-timing-function: ease;
+            }
+            .contenedor {
+                fill: #EC7B6C;
+                transition-property: fill;
+                transition-duration: 300ms;
+                transition-timing-function: ease;
+            }
+            .base-apretar {
+                fill: #E06452;
+                transform:  translate(0px, 0px);
+                transition-property: transform fill;
+                transition-duration: 200ms, 300ms;
+                transition-timing-function: ease;
+            }
+            .base-contenedor {
+                fill: #E06452;
+                transition-property: fill;
+                transition-duration: 300ms;
+                transition-timing-function: ease;
+            }
+            .liquido {
+                fill: #85F19F;
+                transition-property: fill;
+                transition-duration: 300ms;
+                transition-timing-function: ease;
+            }
+            .ralla-1 {
+                fill: #99372A;
+                transition-property: fill;
+                transition-duration: 300ms;
+                transition-timing-function: ease;
+            }
+            .ralla-2 {
+                fill: #99372A;
+                transition-property: fill;
+                transition-duration: 300ms;
+                transition-timing-function: ease;
+            }
+            .ralla-3 {
+                fill: #99372A;
+                transition-property: fill;
+                transition-duration: 300ms;
+                transition-timing-function: ease;
+            }
+        }
+
+    }
+}
+

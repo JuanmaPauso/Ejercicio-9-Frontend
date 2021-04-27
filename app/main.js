@@ -1,7 +1,9 @@
 /**
  * Consts and state
  */
-
+document.addEventListener('click', () => {
+    document.querySelector('svg').classList.toggle('activate');
+})
 
 // Contenedor de instancia del juego
 let game;
@@ -64,4 +66,8 @@ window.addEventListener('load', () => {
     initNavigation();
     initUI();
     navigationTo('#splash_page', 'fade_in');
+    setTimeout(() => {document.querySelector('svg').classList.toggle('active');}, 1000);
+    
 });
+
+
