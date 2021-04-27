@@ -1,9 +1,6 @@
 /**
  * Consts and state
  */
-document.addEventListener('click', () => {
-    document.querySelector('svg').classList.toggle('activate');
-})
 
 // Contenedor de instancia del juego
 let game;
